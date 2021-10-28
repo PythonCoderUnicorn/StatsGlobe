@@ -513,8 +513,38 @@ ggplot2::ggplot(
 
 
 
+# Extract & Count Unique Values in Each Column of Data Frame 
+# Sep 16, 2021
 
+df14 = data.frame(
+  c.1 = 31:35,
+  c.2 = c(9,3,4,6,7),
+  c.3 = "R"
+)
+#   c.1 c.2 c.3
+# 1  31   9   R
+# 2  32   3   R
+# 3  33   4   R
+# 4  34   6   R
+# 5  35   7   R
+                                 
+list_unique = lapply(df14, unique)
+list_unique
 
+# $c.1
+# [1] 31 32 33 34 35
+
+# $c.2
+# [1] 9 3 4 6 7
+
+# $c.3
+# [1] "R"
+                                 
+                                 
+count_unique = rapply(df14, function(x) length(unique(x)))
+count_unique
+# c.1 c.2 c.3 
+# 5   5   1 
 
 
 
