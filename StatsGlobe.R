@@ -490,7 +490,26 @@ show_col(my.color.alpha.all)
 
 
 
+# Change Space & Width of Bars in ggplot2 Barplot 
+# Sep 17, 2021
 
+df13 = data.frame(
+  column.1 = LETTERS[22:26],
+  column.2 = c(4,7,2,4,5)
+)
+
+ggplot2::ggplot(
+  df13,
+  aes(column.1, column.2) ) +
+  geom_bar(stat = 'identity', 
+           width = 0.5) + ggdark::dark_mode()
+
+ggplot2::ggplot(
+  df13,
+  aes(column.1, column.2) ) +
+  geom_bar(stat = 'identity', 
+           fill= 'purple',
+           width = 0.93) + ggdark::dark_mode()
 
 
 
