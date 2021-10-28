@@ -3,7 +3,7 @@
 This is a **quick reference guide for me**, from the YouTube channel Statistics Globe. 
 *This not an exhaustive listing of all the content but only content that I find interesting and useful.* 
 
-Most of the code examples use Base R, organized only by YouTube channel playlist date.
+Most of the code examples use Base R, organized only by YouTube channel playlist date. I have made my own version of each code as to not copy exactly the source material but to learn from. 
 
 ## Highlights
 
