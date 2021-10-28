@@ -550,6 +550,52 @@ count_unique
 
 
 
+# Add Labels at End of Lines in ggplot2 Line Plot
+# Sep 14, 2021
+set.seed(420)
+
+random_df = data.frame(
+  x = 1:10,
+  y= c( rnorm(10),
+        rnorm(10,3,3),
+        rnorm(10,10, 1.5),
+        rnorm(10,6,2)
+        ),
+  group = rep( LETTERS[1:4], each= 10)
+)
+
+random_df
+
+ggplot2::ggplot(
+  random_df,
+  aes(x= x, y= y, col= group)
+)+
+  geom_line() + ggdark::dark_mode()
+
+
+random_df_labels = random_df
+random_df_labels$label = NA
+
+random_df_labels$label[which(random_df_labels$x == max(random_df_labels$x))] = random_df_labels$group[which(random_df_labels$x == max(random_df_labels$x))]
+label = random_df_labels$label
+
+ggplot2::ggplot(
+  random_df,
+  aes(x= x, y= y)
+)+
+  geom_line( aes(col= group)) + 
+  ggrepel::geom_label_repel(
+    aes(label=  label),
+    nudge_x = 1,
+    na.rm = T
+  ) +
+  ggdark::dark_mode() + 
+  theme(
+    legend.box.background =  element_blank(),
+    legend.text = element_text(colour = NA),
+    legend.title = element_text(colour = NA)
+    )
+
 
 
 
