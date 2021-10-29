@@ -829,7 +829,35 @@ my_list[[sample(1: length(my_list), 1)]]
 
                     
                       
+
                       
+                      
+# Calculate Combinations & Permutations 
+# Jun 1, 2021
+library(combinat)
+
+permute_n = permn(3)
+permute_n
+
+# 1 2 3
+# 1 3 2
+# 3 1 2
+# 3 2 1
+# 2 3 1
+# 2 1 3
+
+length(permute_n) # = 6
+
+
+combinations = combinat::combn(4, 3)
+combinations
+#       [,1] [,2] [,3] [,4]
+# [1,]    1    1    1    2
+# [2,]    2    2    3    3
+# [3,]    3    4    4    4
+
+NCOL(combinations) # = 4
+                   
                       
                       
                       
