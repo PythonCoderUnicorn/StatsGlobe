@@ -860,4 +860,31 @@ NCOL(combinations) # = 4
                    
                       
                       
+# Extract Values from Matrix by Column and Row Names
+# May 27, 2021
+my_matrix = matrix(
+  1:15,
+  ncol = 5
+)
+colnames(my_matrix) = paste0("Col", 1:5)
+rownames(my_matrix) = paste0("Row", 1:3)
+
+#       Col1 Col2 Col3 Col4 Col5
+# Row1    1    4    7   10   13
+# Row2    2    5    8   11   14
+# Row3    3    6    9   12   15
+
+my_matrix[ , 'Col1']
+# Row1 Row2 Row3 
+# 1    2    3 
+
+my_matrix[ , 'Col3']
+# Row1 Row2 Row3 
+# 7    8    9 
+
+my_matrix[ 'Row3', ]
+# Col1 Col2 Col3 Col4 Col5 
+#   3    6    9   12   15 
+                      
+                    
                       
