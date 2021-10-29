@@ -716,12 +716,16 @@ ggplot2::ggplot(
   geom_point(color="springgreen3", size= 3 ) +
   labs(title = "Annotate your ggplot today !") +
   annotate("text", 
+           size= 4,
+           fontface= "bold",
            x= 1.5,
            y= 2.2,
            label= "Text number 1") +
   annotate("text", 
+           size= 4.5,
+           fontface= "bold.italic",
            x= 2.5,
            y= 3.1,
            label= "Text number 2") +
-  ggdark::dark_mode()                      
+  ggdark::dark_mode()                    
                       
