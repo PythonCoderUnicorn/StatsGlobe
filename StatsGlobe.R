@@ -663,3 +663,27 @@ ggplot2::ggplot(
 
 
 
+# Count Non-Zero Values in Vector & Data Frame Columns
+# Aug 31, 2021
+zero_vektor = c(3,4,0,0,0,12,17,22,0,4,0,20)
+
+sum(zero_vektor != 0)
+# 7
+
+zero_df = data.frame(
+  x1 = c(0,5,4,0,2,9,7,0,8,4,6,0),
+  x2 = c(10,0,4,0,2,0,4,0,9,2,0,0),
+  x3 = 0
+)
+
+colSums(zero_df != 0)
+# x1 x2 x3 
+# 8  6  0 
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
