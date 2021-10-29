@@ -637,7 +637,28 @@ x_percent
 
 
 
+# Set Axis Breaks of ggplot2 Plot 
+# Sep 2, 2021
+df15 = data.frame(
+  x = 1:6,
+  y = c(8,3,8,2,10,3)
+)
 
+ggplot2::ggplot(
+  df15,
+  aes(x= x, y= y)
+) +
+  geom_line(color='yellowgreen') + ggdark::dark_mode()
+
+
+# -- scale the x values
+ggplot2::ggplot(
+  df15,
+  aes(x= x, y= y)
+) +
+  geom_line(color='yellowgreen') + 
+  scale_x_continuous(breaks =  c(1:6)) +
+  ggdark::dark_mode()
 
 
 
