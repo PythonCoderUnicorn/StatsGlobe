@@ -791,7 +791,31 @@ num_matrix = matrix(
                       
                       
 
-                   
+# Add Individual Text to Each Facet of ggplot2
+# Aug 12, 2021
+df18 = data.frame(
+  x1 = 1:10,
+  y1 = 10:1,
+  group = LETTERS[16:20]
+)
+
+ggplot2::ggplot(
+  df18,
+  aes(x= x1,
+      y= y1,
+      group= group)
+) +
+  geom_point(color="magenta2" , size= 3)+
+  labs(title = "Annotate your facet wrap ggplots") +
+  facet_wrap( . ~ group) + 
+  annotate("text",
+           label= "facet wrap text",
+           x= 5,
+           y= 5) +
+  ggdark::dark_mode()
+                      
+                      
+
                       
                       
                       
