@@ -749,7 +749,21 @@ ggplot2::ggplot(
                       
                       
                       
-                      
+# Scale Data to Range Between Two Values
+# Aug 20, 2021
+set.seed(420)
+vektor.range = runif(100, min= -5, max= 10)
+
+head(vektor.range)
+# 4.083086  9.554155 -2.383182  2.136832  5.867218  8.141540
+
+scaled_vektor.range = vektor.range %>% 
+  scales::rescale()
+
+head(scaled_vektor.range)
+# 0.6219935 0.9976320 0.1780255 0.4883655 0.7444904 0.9006432
+
+                 
                       
                       
                       
