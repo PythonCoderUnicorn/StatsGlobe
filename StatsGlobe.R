@@ -766,7 +766,32 @@ head(scaled_vektor.range)
                  
                       
                       
+# Convert a Character Matrix to Numeric
+# Aug 15, 2021
+char_matrix = matrix(
+  as.character(20:31),
+  ncol = 4
+)
+
+#      [,1] [,2] [,3] [,4]
+# [1,] "20" "23" "26" "29"
+# [2,] "21" "24" "27" "30"
+# [3,] "22" "25" "28" "31"
+
+num_matrix = matrix(
+  as.numeric(char_matrix),
+  ncol = ncol(char_matrix)
+)
+
+#      [,1] [,2] [,3] [,4]
+# [1,]   20   23   26   29
+# [2,]   21   24   27   30
+# [3,]   22   25   28   31
+
                       
+                      
+
+                   
                       
                       
                       
