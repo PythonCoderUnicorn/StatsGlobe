@@ -31,6 +31,9 @@ Most of the code examples use Base R, organized only by YouTube channel playlist
 <img width='400' src="https://user-images.githubusercontent.com/55933131/139479308-d0b83fbe-1c79-457e-acd7-57dc46e4457f.png">
 
 
+### Annotate facet_wrap plots
+
+<img width='600' src="https://user-images.githubusercontent.com/55933131/139491723-79334b94-45b6-4d52-8fda-09eaad3f540b.png">
 
 
 
