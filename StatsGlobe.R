@@ -682,6 +682,19 @@ colSums(zero_df != 0)
                       
                       
                       
+# How to cbind & rbind Vectors with Different Length
+# Aug 30, 2021
+names(vektor.1) = LETTERS[1:6]
+names(vektor.2) = letters[1:4]
+
+vektor_rbind_df = as.data.frame(
+  bind_rows(vektor.1, vektor.2)
+)
+
+vektor_rbind_df                     
+#   A  B  C  D  E  F  a  b  c  d ...5
+# 1 40 41 42 43 44 45 NA NA NA NA   NA
+# 2 NA NA NA NA NA NA 42 42 42 42   42
                       
                       
                       
