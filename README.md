@@ -19,5 +19,9 @@ Most of the code examples use Base R, organized only by YouTube channel playlist
 <img width='400' align='center' src="https://user-images.githubusercontent.com/55933131/139315469-37d40035-806c-4a71-8d0a-d8e5e0d67950.png">
 
 
+### Set Axis Breaks of ggplot
 
+<img width='400' align='left' src="https://user-images.githubusercontent.com/55933131/139463427-e38801bd-8551-4f21-b836-415dc9a14cc6.png">
+
+<img width='400' align='center' src="https://user-images.githubusercontent.com/55933131/139463584-6397a6a6-e5ce-4a0f-b7dc-af29a7888cdf.png">
 
