@@ -612,7 +612,27 @@ month_abb
 
 
 
+                      
+                      
+                      
+# Calculate Percentage in R
+# Sep 3, 2021
+set.seed(420)
+x = sample(LETTERS[11:20], 50, replace = T)
 
+head(x)
+table_x = table(x)
+
+# x
+# K L N O P Q R S T 
+# 3 6 5 8 7 6 7 6 2 
+
+x_percent = table_x / length(x)
+x_percent
+
+# x
+# K    L    N    O    P    Q    R    S    T 
+# 0.06 0.12 0.10 0.16 0.14 0.12 0.14 0.12 0.04 
 
 
 
