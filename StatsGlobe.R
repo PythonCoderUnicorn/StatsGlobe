@@ -598,6 +598,17 @@ ggplot2::ggplot(
 
 
 
+# Convert Numeric Values to Month Names & Abbreviations
+# Sep 4, 2021
+month_nums = c(3,6,8,12,4)
+
+month_names = month.name[month_nums]
+month_names
+#  "March"    "June"     "August"   "December" "April"  
+
+month_abb = month.abb[month_nums]
+month_abb
+# "Mar" "Jun" "Aug" "Dec" "Apr"
 
 
 
