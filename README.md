@@ -28,7 +28,7 @@ Most of the code examples use Base R, organized only by YouTube channel playlist
 
 ### Annotate your ggplot
 
-<img width='400' src="https://user-images.githubusercontent.com/55933131/139471348-2da7fab3-d89f-4861-87a9-203b13cb71d7.png">
+<img width='400' src="https://user-images.githubusercontent.com/55933131/139479308-d0b83fbe-1c79-457e-acd7-57dc46e4457f.png">
 
 
 
