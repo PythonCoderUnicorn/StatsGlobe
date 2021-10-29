@@ -697,6 +697,31 @@ vektor_rbind_df
 # 2 NA NA NA NA NA NA 42 42 42 42   42
                       
                       
+     
                       
                       
+# Add Text Label to ggplot2 Plot
+# Aug 29, 2021
+
+df16 = data.frame(
+  x = 1:5,
+  y = 1:5
+)
+
+ggplot2::ggplot(
+  df16,
+  aes(x= x,
+      y= y)
+) +
+  geom_point(color="springgreen3", size= 3 ) +
+  labs(title = "Annotate your ggplot today !") +
+  annotate("text", 
+           x= 1.5,
+           y= 2.2,
+           label= "Text number 1") +
+  annotate("text", 
+           x= 2.5,
+           y= 3.1,
+           label= "Text number 2") +
+  ggdark::dark_mode()                      
                       
