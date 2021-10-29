@@ -729,3 +729,34 @@ ggplot2::ggplot(
            label= "Text number 2") +
   ggdark::dark_mode()                    
                       
+
+                      
+# Add Panel Border to ggplot2 Plot
+# Aug 23, 2021
+ggplot2::ggplot(
+  df16,
+  aes(x= x,
+      y= y)
+) +
+  geom_point(size= 3, color="springgreen3" )+
+  ggdark::dark_mode() +
+  labs(title = "Panel border in ggplot") +
+  theme(panel.border = element_rect(
+    color= "yellowgreen",
+    fill = NA,
+    size = 5
+  ))                   
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
