@@ -817,7 +817,17 @@ ggplot2::ggplot(
                       
 
                       
-                      
+# Select Random Element from List 
+# Jun 9, 2021
+my_list = list(
+  "www", 6:9, letters[3:6]
+)
+my_list[[1]] # "www"
+
+# randomly select item from list (rerun to get different output)
+my_list[[sample(1: length(my_list), 1)]]
+
+                    
                       
                       
                       
