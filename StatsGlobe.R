@@ -907,7 +907,19 @@ my_letters
                       
 
                       
-                      
+# Convert Vector to Matrix
+# May 23, 2021
+
+vektor.3 = 1:15
+
+vektor_to_matrix = matrix(vektor.3, ncol = 3)
+
+#       [,1] [,2] [,3]
+# [1,]    1    6   11
+# [2,]    2    7   12
+# [3,]    3    8   13
+# [4,]    4    9   14
+# [5,]    5   10   15                      
                       
                       
                       
