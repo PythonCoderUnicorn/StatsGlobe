@@ -885,6 +885,41 @@ my_matrix[ , 'Col3']
 my_matrix[ 'Row3', ]
 # Col1 Col2 Col3 Col4 Col5 
 #   3    6    9   12   15 
+   
+                      
+                      
                       
                     
+# Create Vector with Intervals in R
+# May 24, 2021
+my_seq = seq(
+  from= 100,
+  to = 200,
+  by = 10
+  )
+
+my_seq
+# 100 110 120 130 140 150 160 170 180 190 200
+
+my_letters = LETTERS[seq(from= 1, to= length(letters), by= 5)]
+my_letters
+# "A" "F" "K" "P" "U" "Z"
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
                       
