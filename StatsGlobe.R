@@ -924,6 +924,24 @@ vektor_to_matrix = matrix(vektor.3, ncol = 3)
                       
                       
                       
+# Transform ggplot2 Plot Axis to log10 Scale 
+# May 20, 2021
+set.seed(420)
+
+log_df = data.frame(
+  x = rnorm(100, mean= 60, sd= 5),
+  y = rnorm(100, mean = 80, sd= 7)
+)
+
+ggplot2::ggplot(
+  log_df,
+  aes(x= x,
+      y= y)
+) +
+  geom_point(color= "seagreen", size=2.5 )+
+  scale_x_continuous(trans = "log10")+
+  labs(title = "log scale x-axis", x="x-log10")+
+  ggdark::dark_mode()
                       
                       
                       
